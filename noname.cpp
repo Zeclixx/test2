@@ -49,8 +49,7 @@ void checkBracket(char* bString){
 				return;
 			}
 			
-		}
-		
+		}		
 		i++; 
 	}
 	if((roundOpenCount!=roundCloseCount)||(curlyOpenCount!=curlyCloseCount)||(squareOpenCount!=squareCloseCount)){
