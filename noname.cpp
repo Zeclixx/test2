@@ -50,6 +50,7 @@ void checkBracket(char* bString){
 			}
 			
 		}
+		
 		i++; 
 	}
 	if((roundOpenCount!=roundCloseCount)||(curlyOpenCount!=curlyCloseCount)||(squareOpenCount!=squareCloseCount)){
