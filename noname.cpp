@@ -64,7 +64,7 @@ void checkBracket(char* bString){
 
 int main(void){
 	int testNum=0;
-	char bracketString[10000]="";
+	char bracketString[10001]="";
 	int i;
 	
 	scanf("%d", &testNum);
