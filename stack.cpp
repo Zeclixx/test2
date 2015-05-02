@@ -7,6 +7,7 @@ int isEmpty(){
 	if(top==stack){
 		return 0; //empty
 	}
+	return 1;
 }
 
 void push(char c){
