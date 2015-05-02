@@ -26,7 +26,7 @@ char pop(){
 
 
 void checkBracket(char* bString){
-	int i;
+	int i=0;
 	char temp;
 	
 	while(bString[i]!='\0'){
