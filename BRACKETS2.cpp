@@ -1,6 +1,7 @@
+#define SIZE 10001
 #include <stdio.h>
 
-char stack[10001];
+char stack[SIZE];
 char *top = stack;
 
 int isEmpty(){
@@ -23,11 +24,17 @@ char pop(){
 	return *top;
 }
 
+void initStack(){
+	top = stack;
+}
+
 
 
 void checkBracket(char* bString){
 	int i=0;
 	char temp;
+	
+	initStack();
 	
 	while(bString[i]!='\0'){
 		if((bString[i]=='(')||(bString[i]=='{')||(bString[i]=='[')){
@@ -64,12 +71,11 @@ void checkBracket(char* bString){
 
 int main(void){
 	int testNum=0;
-	char bracketString[10001]="";
+	char bracketString[SIZE]="";
 	int i;
 	
 	scanf("%d", &testNum);
 	for(i=0;i<testNum;i++){
-		
 		scanf("%s", bracketString);
 		checkBracket(bracketString);
 	}
